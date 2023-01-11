@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luis Felipe Restrepo</title>
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <header class="internas">
+    <nav class="navbar navbar-expand-lg nav-portfolio desktop">
+      <div class="container-portfolio d-flex justify-content-between">
+        <a class="navbar-brand logo" href="index.html"><span>{</span>RESTREPO<span>}</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav  mb-2 mb-lg-0 justify-content-center w-100" id="menu-ocultar">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobre-mi.html">Sobre Mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portafolio.html">Portafolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="servicios.html">Servicios</a>
+            </li>
+          </ul>
+
+        </div>
+        <a id="menu-icon" onclick="mostrarMenu()" href="#"><img src="assets/img/menu.png" alt=""></a>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary moviles">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="index.html"><span>{</span>RESTREPO<span>}</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link " aria-current="page" href="index.html">Inicio</a>
+            <a class="nav-link " href="sobre-mi.html">Sobre Mí</a>
+            <a class="nav-link " href="portafolio.html">Portafolio</a>
+            <a class="nav-link active" href="servicios.html">Servicios</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="container-portfolio" id="servicios">
+      <h1>- SERVICIOS - </h1>
+      <p>Principales servicios, elige la categoría de la que quieres conocer más.</p>
+
+      <div class="d-flex justify-content-center" id="cont-services">
+        <article class="card-servicio">
+          <img src="assets/img/front-end.png" alt="Diseñador UI">
+          <h3>Desarrollador Web</h3>
+          <p>Desarrollo de websites empresariales y de negocios que cumplen con las necesidades del cliente, bien sean informativas, de
+            catalogo, e-commerce(tienda) o solución a medida.</p>
+        </article>
+
+        <article class="card-servicio">
+          <img src="assets/img/Disenadorui.png" alt="Diseñador UI">
+          <h3>Diseñador UI</h3>
+          <p>Diseñador de interfaces empírico con amplia experiencia en el uso de herramientas como figma, adobe XD, photoshop e illustrator.</p>
+        </article>
+
+        <article class="card-servicio">
+          <img src="assets/img/formador.png" alt="Diseñador UI">
+          <h3>Formador</h3>
+          <p>Ya que también me he desempeñado como instructor SENA, cuento con habilidades como formador en áreas de análisis, desarrollo de software y gestión de proyectos.</p>
+        </article>
+      </div>
+    </section>
+
+
+  </main>
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

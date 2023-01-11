@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luis Felipe Restrepo</title>
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <header class="internas portafolio-header">
+    <nav class="navbar navbar-expand-lg nav-portfolio desktop">
+      <div class="container-portfolio d-flex justify-content-between">
+        <a class="navbar-brand logo" href="index.html"><span>{</span>RESTREPO<span>}</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav  mb-2 mb-lg-0 justify-content-center w-100" id="menu-ocultar">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobre-mi.html">Sobre Mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="portafolio.html">Portafolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="servicios.html">Servicios</a>
+            </li>
+          </ul>
+
+        </div>
+        <a id="menu-icon" onclick="mostrarMenu()" href="#"><img src="assets/img/menu.png" alt=""></a>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary moviles">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="index.html"><span>{</span>RESTREPO<span>}</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link " aria-current="page" href="index.html">Inicio</a>
+            <a class="nav-link " href="sobre-mi.html">Sobre Mí</a>
+            <a class="nav-link " href="portafolio.html">Portafolio</a>
+            <a class="nav-link active" href="servicios.html">Servicios</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="portfolio-main">
+    <section class="container-fluid" id="portafolio">
+      <div class="row cont-portfolio">
+
+        <article class="col-lg-6 col-md-12 info-portfolio">
+          <h1>PORTAFOLIO</h1>
+          <h2>Selecciona una categoría</h2>
+          <ul class="categorias">
+            <a href="#" class="active" id="cat3" onclick="activarDf()">Desarrollador Front End</a>
+            <a href="#" id="cat2" onclick="activarUi()">Diseñador UI</a>
+            <a href="#" id="cat1" onclick="activarDw()">Desarrollo Web</a>
+
+
+          </ul>
+
+
+          <div id="web-cat-i" class="info-categoria hide">
+            <h3>Desarrollo Web</h3>
+            <p>Como desarrollador web tengo conocimiento y experiencia en desarrollo de sitios de contenidos administrables, de
+              catalago, e-commerce y desarrollo de plataformas a medida, principalmente con las siguientes tecnologías.</p>
+
+            <div class="row">
+              <div class="col-md-6">
+                <ul>
+                  <li>Html5 + Css3 + Bootstrap</li>
+                  <li>WordPress</li>
+                  <li>JavaScript</li>
+                  <li>WooCommerce</li>
+                </ul>
+
+              </div>
+              <div class="col-md-6">
+                <ul>
+                  <li>Responsive web</li>
+                  <li>Sql</li>
+                  <li>PHP + MVC</li>
+                </ul>
+              </div>
+            </div>
+
+
+
+          </div>
+
+          <div id="ui-cat-i" class="info-categoria hide">
+            <h3>Diseñador UI</h3>
+            <p>A decir verdad, mis conocimientos en esta área son empíricos, aunque cuento con amplia experiencia en el
+              manejo de las herramientas y software que se mencionan a continuación.</p>
+
+            <div class="row">
+              <div class="col-md-6">
+                <ul>
+                  <li>Figma</li>
+                  <li>Adobe XD</li>
+
+                </ul>
+
+              </div>
+              <div class="col-md-6">
+                <ul>
+                  <li>Adobe Photoshop</li>
+                  <li>Adobe Illustrator</li>
+
+                </ul>
+              </div>
+            </div>
+            <p><strong>Proyecto:</strong><br>Rediseño de logo e interfaz para la aplicación Chiapp 2021, la herramienta
+              digital para interactuar con la alcaldía municipal de Chía. Diseño y prototipado realizado en Figma
+            </p>
+
+
+          </div>
+
+
+          <div id="front-cat-i" class="info-categoria show">
+            <h3>Desarrollo FrontEnd</h3>
+            <p>Como FrontEnd he desarrollado en diferentes empresas con equipos y profesionales excepcionales, muchos de
+              estos proyectos son de gestión interna en cuanto a procesos y funcionalidades, en el slider podrás
+              observar algunos de los proyectos en los que más he disfrutado colaborar. <br><br>
+              <strong>Principales tecnologías: </strong>
+            </p>
+
+            <div class="row">
+              <div class="col-md-6">
+                <ul>
+                  <li>Html5 + Css3 + Bootstrap</li>
+                  <li>JavaScript</li>
+                  <li>Ajax</li>
+                  <li>Git</li>
+                </ul>
+
+              </div>
+              <div class="col-md-6">
+                <ul>
+                  <li>TypeScript</li>
+                  <li>Angular</li>
+                  <li>React Js</li>
+                </ul>
+              </div>
+            </div>
+
+
+
+          </div>
+
+
+
+        </article>
+
+        <article class="col-lg-6 col-md-12 carousel-portfolio">
+
+          <div id="web-cat-c" class="carousel-categoria hide">
+            <div id="carouselDwCaptions" class="carousel slide" data-bs-ride="carousel">
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/img/desarrollador-1.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Concejo Municipal Chía</h5>
+                    <a href="https://www.concejomunicipalchia.gov.co/" target="_blank">Visitar Website</a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/desarrollador-2.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Landing Lanzamiento Chiapp</h5>
+                    <a href="https://codingnow2022.github.io/chiapp/" target="_blank">Visitar Landing</a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/desarrollador-3.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Landing Ciencuadras</h5>
+                    <a href="https://codingnow2022.github.io/ciencuadras/" target="_blank">Visitar Landing</a>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselDwCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselDwCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+
+          <div id="ui-cat-c" class="carousel-categoria hide">
+            <div id="carouselUiCaptions" class="carousel slide" data-bs-ride="carousel">
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/img/diseno-ui-1.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Rediseño Chiapp</h5>
+                    <a href="https://www.figma.com/proto/iFVwdprEVvJC7MSxF1TCtJ/CHIAPP?node-id=2%3A3810&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A3810"
+                      target="_blank">Visitar Figma</a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/diseno-ui-2.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Rediseño Chiapp</h5>
+                    <a href="https://www.figma.com/proto/iFVwdprEVvJC7MSxF1TCtJ/CHIAPP?node-id=2%3A3810&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A3810"
+                      target="_blank">Visitar Figma</a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/diseno-ui-3.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Rediseño Chiapp</h5>
+                    <a href="https://www.figma.com/proto/iFVwdprEVvJC7MSxF1TCtJ/CHIAPP?node-id=2%3A3810&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A3810"
+                      target="_blank">Visitar Figma</a>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselUiCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselUiCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+
+          <div id="front-cat-c" class="carousel-categoria show">
+            <div id="carouselDfCaptions" class="carousel slide" data-bs-ride="carousel">
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/img/frontend-1.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Ciencuadras</h5>
+                    <a href="https://www.ciencuadras.com/" target="_blank">Visitar Website</a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/frontend-2.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Seguros Bolivar</h5>
+                    <a href="https://www.segurosbolivar.com/" target="_blank">Visitar Website</a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/frontend-4.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Doctoraki</h5>
+                    <a href="https://www.doctoraki.com/" target="_blank">Visitar Website</a>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/frontend-3.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Jelpit</h5>
+                    <a href="https://www.jelpit.com/" target="_blank">Visitar Website</a>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselDfCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselDfCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+
+
+
+        </article>
+
+      </div>
+    </section>
+
+
+  </main>
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
