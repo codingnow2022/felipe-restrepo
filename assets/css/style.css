@@ -652,14 +652,15 @@ main.portfolio-main {
     width: 48%;
     border-radius: 20px;
     margin: 10px 30px;
-    position: relative;    
+    position: relative;
     padding: 20px 50px 20px;
     padding-top: 60px;
     background: var(--background);
     cursor: pointer;
     transition: .4s;
 }
-#about .card-about:nth-child(2){
+
+#about .card-about:nth-child(2) {
     width: 52%;
 }
 
@@ -679,7 +680,7 @@ main.portfolio-main {
     position: absolute;
     content: "";
     border-radius: 20px;
-    left: 10px ;
+    left: 10px;
     right: 0;
     margin: 0 auto;
     top: 80px;
@@ -769,16 +770,17 @@ main.portfolio-main {
     padding: 20px;
 }
 
-nav.moviles{
+nav.moviles {
     display: none;
 }
 
-.moviles .navbar-toggler{
+.moviles .navbar-toggler {
     border: 0 transparent;
     outline: none;
     box-shadow: 0 0 0 0 transparent;
 }
-.moviles .navbar-toggler img{
+
+.moviles .navbar-toggler img {
     width: 25px;
 }
 
@@ -789,71 +791,88 @@ nav.moviles{
         height: 400px;
         padding-top: 80px;
     }
+
     .cont-foto .formass {
         margin: 0 auto;
         width: 250px;
         height: 250px;
     }
+
     #portafolio .carousel-portfolio {
         padding-top: 14%;
     }
+
     #servicios .card-servicio {
         padding: 94px 38px 20px;
     }
 }
 
 @media screen and (min-width: 660px) and (max-width: 990px) {
-    .container-portfolio.home .d-flex{
+    .container-portfolio.home .d-flex {
         flex-wrap: wrap;
     }
+
     .container-portfolio {
         width: 95%;
         margin: 0 0 0 5%;
     }
+
     .left {
         width: 70%;
         padding: 144px 0 190px;
     }
-    .left h2{
+
+    .left h2 {
         font-size: 46px;
     }
+
     .center {
         width: 30%;
         overflow: hidden;
     }
+
     .cont-foto img#foto-personal {
         position: absolute;
         z-index: 999;
         width: 154%;
     }
-    .cont-foto .formas{
+
+    .cont-foto .formas {
         display: none;
     }
-    nav .btn-portfolio{
+
+    nav .btn-portfolio {
         display: none;
     }
-    .right{
+
+    .right {
         width: 95%;
         display: flex;
         justify-content: space-between;
         margin-top: 40px;
     }
-    #contDes1,#contDes2,#contDes3{
+
+    #contDes1,
+    #contDes2,
+    #contDes3 {
         left: auto;
     }
-    .redes{
+
+    .redes {
         top: 40px;
         justify-content: center;
     }
 
     /* -----------------------------  */
-    #about #cont-about{
+    #about #cont-about {
         flex-wrap: wrap;
     }
-    #about .card-about.cont-foto{
+
+    #about .card-about.cont-foto {
         width: 52%;
         padding: 23px;
     }
+
     #about .card-about.cont-foto::before {
         width: 90%;
         height: 75%;
@@ -869,23 +888,27 @@ nav.moviles{
         z-index: 2;
         bottom: 3%;
     }
+
     #about .card-about:nth-child(2) {
         width: 95%;
         padding: 0;
         margin: 0;
     }
+
     /* ------------------------------ */
 
     #servicios #cont-services {
         margin-top: 50px;
         flex-wrap: wrap;
     }
-    #servicios .card-servicio{
+
+    #servicios .card-servicio {
         width: 80%;
         margin-top: 160px;
         margin-bottom: 40px;
     }
-    #menu-icon{
+
+    #menu-icon {
         display: none;
     }
 
@@ -896,10 +919,12 @@ nav.moviles{
         right: auto;
         transition: 1s;
     }
-    nav.desktop{
+
+    nav.desktop {
         display: none;
     }
-    nav.moviles{
+
+    nav.moviles {
         display: block;
         position: fixed;
         width: 100%;
@@ -907,64 +932,75 @@ nav.moviles{
         background: #f1f4f6;
         box-shadow: 0px 4px 10px -5px #999;
     }
-    .container-portfolio{
+
+    .container-portfolio {
         padding-top: 60px;
     }
-    #about h1,#servicios h1,#portafolio h1{
+
+    #about h1,
+    #servicios h1,
+    #portafolio h1 {
         font-size: 46px;
         margin-top: 30px;
         text-align: center;
     }
-    
-    .navbar-nav .nav-link.active::before{
 
-    }
-    nav.moviles a.nav-link{
+
+    nav.moviles a.nav-link {
         padding: 20px 10px;
-    font-size: 20px;
-    font-weight: 500;
+        font-size: 20px;
+        font-weight: 500;
     }
-    .container-portfolio{
+
+    .container-portfolio {
         padding-top: 60px;
     }
-    .navbar-nav .nav-link.active::before{
+
+    .navbar-nav .nav-link.active::before {
         left: 0;
         margin: 2px 0;
         width: 30%;
     }
+
     .navbar-nav .nav-link:hover::before {
         width: 30%;
         left: 0;
         margin: 2px 0;
     }
+
     .navbar-nav .nav-link::before {
         margin: 2px 0;
         left: 0;
     }
 
-    #portafolio ul.categorias{
+    #portafolio ul.categorias {
         padding-bottom: 40px;
         text-align: center;
     }
-    #portafolio .info-portfolio{
+
+    #portafolio .info-portfolio {
         padding-top: 100px;
     }
-    #portafolio h2{
+
+    #portafolio h2 {
         text-align: center;
     }
-    #portafolio h1{
+
+    #portafolio h1 {
         font-size: 46px;
     }
 }
 
 @media screen and (min-width: 421px) and (max-width: 650px) {
-    nav.desktop{
+    nav.desktop {
         display: none;
     }
+
     #portafolio .carousel-portfolio {
         background-position-y: center;
     }
-    nav.moviles{
+
+    nav.moviles {
         display: block;
         position: fixed;
         width: 100%;
@@ -972,213 +1008,49 @@ nav.moviles{
         background: #f1f4f6;
         box-shadow: 0px 4px 10px -5px #999;
     }
-    .container-portfolio{
+
+    .container-portfolio {
         padding-top: 60px;
     }
-    .navbar-nav .nav-link.active::before{
+
+    .navbar-nav .nav-link.active::before {
         left: 0;
         margin: 2px 0;
         width: 30%;
     }
+
     .navbar-nav .nav-link:hover::before {
         width: 30%;
         left: 0;
         margin: 2px 0;
     }
+
     .navbar-nav .nav-link::before {
         margin: 2px 0;
         left: 0;
     }
-    nav.moviles a.nav-link{
+
+    nav.moviles a.nav-link {
         padding: 20px 10px;
-    font-size: 20px;
-    font-weight: 500;
-    }
-    .container-portfolio.home .d-flex{
-        flex-wrap: wrap;
-    }
-    .internas #navbarSupportedContent ul {
-        position: unset;
-        right: auto;
-        transition: 1s;
-    }
-    .container-portfolio {
-        width: 95%;
-        margin: 0 0 0 5%;
-    }
-    .left {
-        width: 100%;
-        text-align: center;
-        padding: 144px 0 120px;
-        padding-right: 6%;
-    }
-    .center {
-        display: none;
-    }
-    .cont-foto img#foto-personal {
-        position: absolute;
-        z-index: 999;
-        width: 200%;
-        top: 50px;
-        left: -25px;
-    }
-    .left h2{
-        font-size: 42px;
-    }
-    .left h3{
-        font-size: 28px;
-    }
-    .cont-foto .formas{
-        display: none;
-    }
-    nav .btn-portfolio{
-        display: none;
-    }
-    .right{
-        width: 95%;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    #contDes1,#contDes2,#contDes3{
-        left: auto;
-        margin: 20px 12px;
-    }
-    .redes{
-        top: 40px;
-        justify-content: center;
-        padding-bottom: 45px;
-    }
-
-    /* -----------------------------  */
-    #about #cont-about{
-        flex-wrap: wrap;
-    }
-    #about .card-about.cont-foto{
-        width: 100%;
-        padding: 23px;
-    }
-    #about .card-about.cont-foto::before {
-        width: 90%;
-        height: 75%;
-        background: transparent;
-        border: 4px solid #fff;
-        position: absolute;
-        content: "";
-        border-radius: 20px;
-        left: 10px;
-        right: 0;
-        margin: 0 auto;
-        top: auto;
-        z-index: 2;
-        bottom: 3%;
-    }
-    #about .card-about:nth-child(2) {
-        width: 95%;
-        padding: 0;
-        margin: 0;
-    }
-    #about h1,#servicios h1,#portafolio h1{
-        font-size: 35px;
-        margin-top: 34px;
-        text-align: center;
-    }
-    #portafolio h2{
-        text-align: center;
-    }
-    #portafolio .info-portfolio {
-        padding-top: 100px;
-        padding-left: 5%;
-    }
-    #about .card-about h3{
-        font-size: 25px;
-        margin-top: 40px;
-    }
-
-
-    #menu-icon{
-        display: none;
-    }
-
-    /* ------------------------------ */
-
-    #servicios #cont-services {
-        margin-top: 50px;
-        flex-wrap: wrap;
-    }
-    #servicios .card-servicio{
-        width: 80%;
-        margin-top: 160px;
-        margin-bottom: 40px;
-    }
-    #accordionExp .accordion-item button{
-        flex-wrap: wrap;
-    }
-    #accordionExp .accordion-item button span{
-        width: 100%;
-    }
-
-
-    #portafolio ul.categorias a{
-        font-size: 15px;
-        margin-right: 4px;
-        padding-right: 12px;
-    }
-    #portafolio ul.categorias{
-        padding-bottom: 40px;
-        text-align: center;
-    }
-}
-
-@media screen and (min-width: 320px) and (max-width: 420px) {
-    nav.desktop{
-        display: none;
-    }
-    nav.moviles{
-        display: block;
-        position: fixed;
-        width: 100%;
-        z-index: 999;
-        background: #f1f4f6;
-        box-shadow: 0px 4px 10px -5px #999;
-    }
-    .left h3{
         font-size: 20px;
+        font-weight: 500;
     }
-    .container-portfolio{
-        padding-top: 60px;
-    }
-    .navbar-nav .nav-link.active::before{
-        left: 0;
-        margin: 2px 0;
-        width: 30%;
-    }
-    .navbar-nav .nav-link:hover::before {
-        width: 30%;
-        left: 0;
-        margin: 2px 0;
-    }
-    .navbar-nav .nav-link::before {
-        margin: 2px 0;
-        left: 0;
-    }
-    nav.moviles a.nav-link{
-        padding: 20px 10px;
-    font-size: 20px;
-    font-weight: 500;
-    }
-    .container-portfolio.home .d-flex{
+
+    .container-portfolio.home .d-flex {
         flex-wrap: wrap;
     }
+
     .internas #navbarSupportedContent ul {
         position: unset;
         right: auto;
         transition: 1s;
     }
+
     .container-portfolio {
         width: 95%;
         margin: 0 0 0 5%;
     }
+
     .left {
         width: 100%;
         text-align: center;
@@ -1186,7 +1058,230 @@ nav.moviles{
         padding-right: 6%;
         position: relative;
     }
-    .left::before{
+
+    .left::before {
+        width: 53%;
+        height: 355px;
+        content: "";
+        position: absolute;
+        top: 0;
+        background: url(../img/foto-restrepo.png);
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: top;
+        left: 20%;
+    }
+
+    .center {
+        display: none;
+    }
+
+    .cont-foto img#foto-personal {
+        position: absolute;
+        z-index: 999;
+        width: 200%;
+        top: 50px;
+        left: -25px;
+    }
+
+    .left h2 {
+        font-size: 42px;
+    }
+
+    .left h3 {
+        font-size: 28px;
+    }
+
+    .cont-foto .formas {
+        display: none;
+    }
+
+    nav .btn-portfolio {
+        display: none;
+    }
+
+    .right {
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #contDes1,
+    #contDes2,
+    #contDes3 {
+        left: auto;
+        margin: 20px 12px;
+    }
+
+    .redes {
+        top: 40px;
+        justify-content: center;
+        padding-bottom: 45px;
+    }
+
+    /* -----------------------------  */
+    #about #cont-about {
+        flex-wrap: wrap;
+    }
+
+    #about .card-about.cont-foto {
+        width: 100%;
+        padding: 23px;
+    }
+
+    #about .card-about.cont-foto::before {
+        width: 90%;
+        height: 75%;
+        background: transparent;
+        border: 4px solid #fff;
+        position: absolute;
+        content: "";
+        border-radius: 20px;
+        left: 10px;
+        right: 0;
+        margin: 0 auto;
+        top: auto;
+        z-index: 2;
+        bottom: 3%;
+    }
+
+    #about .card-about:nth-child(2) {
+        width: 95%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #about h1,
+    #servicios h1,
+    #portafolio h1 {
+        font-size: 35px;
+        margin-top: 34px;
+        text-align: center;
+    }
+
+    #portafolio h2 {
+        text-align: center;
+    }
+
+    #portafolio .info-portfolio {
+        padding-top: 100px;
+        padding-left: 5%;
+    }
+
+    #about .card-about h3 {
+        font-size: 25px;
+        margin-top: 40px;
+    }
+
+
+    #menu-icon {
+        display: none;
+    }
+
+    /* ------------------------------ */
+
+    #servicios #cont-services {
+        margin-top: 50px;
+        flex-wrap: wrap;
+    }
+
+    #servicios .card-servicio {
+        width: 80%;
+        margin-top: 160px;
+        margin-bottom: 40px;
+    }
+
+    #accordionExp .accordion-item button {
+        flex-wrap: wrap;
+    }
+
+    #accordionExp .accordion-item button span {
+        width: 100%;
+    }
+
+
+    #portafolio ul.categorias a {
+        font-size: 15px;
+        margin-right: 4px;
+        padding-right: 12px;
+    }
+
+    #portafolio ul.categorias {
+        padding-bottom: 40px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 420px) {
+    nav.desktop {
+        display: none;
+    }
+
+    nav.moviles {
+        display: block;
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        background: #f1f4f6;
+        box-shadow: 0px 4px 10px -5px #999;
+    }
+
+    .left h3 {
+        font-size: 20px;
+    }
+
+    .container-portfolio {
+        padding-top: 60px;
+    }
+
+    .navbar-nav .nav-link.active::before {
+        left: 0;
+        margin: 2px 0;
+        width: 30%;
+    }
+
+    .navbar-nav .nav-link:hover::before {
+        width: 30%;
+        left: 0;
+        margin: 2px 0;
+    }
+
+    .navbar-nav .nav-link::before {
+        margin: 2px 0;
+        left: 0;
+    }
+
+    nav.moviles a.nav-link {
+        padding: 20px 10px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .container-portfolio.home .d-flex {
+        flex-wrap: wrap;
+    }
+
+    .internas #navbarSupportedContent ul {
+        position: unset;
+        right: auto;
+        transition: 1s;
+    }
+
+    .container-portfolio {
+        width: 95%;
+        margin: 0 0 0 5%;
+    }
+
+    .left {
+        width: 100%;
+        text-align: center;
+        padding: 360px 0 60px;
+        padding-right: 6%;
+        position: relative;
+    }
+
+    .left::before {
         width: 70%;
         height: 350px;
         content: "";
@@ -1198,9 +1293,11 @@ nav.moviles{
         background-position-y: top;
         left: 13%;
     }
+
     .center {
         display: none;
     }
+
     .cont-foto img#foto-personal {
         position: absolute;
         z-index: 999;
@@ -1208,59 +1305,74 @@ nav.moviles{
         top: 139px;
         left: -23px;
     }
-    .left h2{
+
+    .left h2 {
         font-size: 32px;
     }
-    .cont-foto .formas{
+
+    .cont-foto .formas {
         display: none;
     }
-    nav .btn-portfolio{
+
+    nav .btn-portfolio {
         display: none;
     }
-    .right{
+
+    .right {
         width: 95%;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
     }
-    #contDes1,#contDes2,#contDes3{
+
+    #contDes1,
+    #contDes2,
+    #contDes3 {
         left: auto;
         margin: 20px 12px;
     }
-    .redes{
+
+    .redes {
         top: 40px;
         justify-content: center;
         padding-bottom: 45px;
     }
 
     /* -----------------------------  */
-  
+
     #about .card-about:nth-child(2) {
         width: 95%;
         padding: 0;
         margin: 0;
     }
-    #about h1,#servicios h1,#portafolio h1{
+
+    #about h1,
+    #servicios h1,
+    #portafolio h1 {
         font-size: 35px;
         margin-top: 34px;
         text-align: center;
     }
-    #portafolio h2{
+
+    #portafolio h2 {
         text-align: center;
     }
+
     #portafolio .info-portfolio {
         padding-top: 100px;
         padding-left: 5%;
     }
-    #about .card-about h3{
+
+    #about .card-about h3 {
         font-size: 25px;
         margin-top: 40px;
     }
 
-    #about #cont-about{
+    #about #cont-about {
         flex-wrap: wrap;
     }
-    #about .card-about.cont-foto{
+
+    #about .card-about.cont-foto {
         width: 100%;
         padding: 23px;
     }
@@ -1282,7 +1394,7 @@ nav.moviles{
         bottom: 4%;
     }
 
-    #menu-icon{
+    #menu-icon {
         display: none;
     }
 
@@ -1292,32 +1404,38 @@ nav.moviles{
         margin-top: 50px;
         flex-wrap: wrap;
     }
-    #servicios .card-servicio{
+
+    #servicios .card-servicio {
         width: 80%;
         margin-top: 160px;
         margin-bottom: 40px;
         padding: 40px 10px;
     }
+
     #portafolio .info-categoria {
         padding-right: 9px;
     }
+
     #portafolio .carousel-portfolio {
         background-position-y: center;
     }
-    #accordionExp .accordion-item button{
+
+    #accordionExp .accordion-item button {
         flex-wrap: wrap;
     }
-    #accordionExp .accordion-item button span{
+
+    #accordionExp .accordion-item button span {
         width: 100%;
     }
 
 
-    #portafolio ul.categorias a{
+    #portafolio ul.categorias a {
         font-size: 15px;
         margin-right: 4px;
         padding-right: 12px;
     }
-    #portafolio ul.categorias{
+
+    #portafolio ul.categorias {
         padding-bottom: 40px;
         text-align: center;
     }
