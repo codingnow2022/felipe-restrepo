@@ -99,6 +99,7 @@ nav .logo span {
     font-size: 14px;
     text-transform: uppercase;
     box-shadow: 0px 5px 14px -5px #0f90e5;
+    line-height: 36px;
 }
 
 .btn-portfolio:hover {
@@ -574,6 +575,7 @@ main.portfolio-main {
 
 #portafolio .carousel-portfolio {
     padding-top: 2%;
+    padding-bottom: 20px;
 }
 
 #portafolio .carousel-control-prev {
@@ -592,7 +594,7 @@ main.portfolio-main {
 #portafolio .carousel-control-next {
 
     position: absolute;
-    left: 10%;
+    left: 12%;
     top: 95%;
     width: 45px;
     height: 45px;
@@ -771,7 +773,36 @@ nav.moviles{
     display: none;
 }
 
-@media screen and (min-width: 768px) and (max-width: 990px) {
+.moviles .navbar-toggler{
+    border: 0 transparent;
+    outline: none;
+    box-shadow: 0 0 0 0 transparent;
+}
+.moviles .navbar-toggler img{
+    width: 25px;
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1650px) {
+    .cont-foto .formas {
+        margin: 120px auto;
+        width: 400px;
+        height: 400px;
+        padding-top: 80px;
+    }
+    .cont-foto .formass {
+        margin: 0 auto;
+        width: 250px;
+        height: 250px;
+    }
+    #portafolio .carousel-portfolio {
+        padding-top: 14%;
+    }
+    #servicios .card-servicio {
+        padding: 94px 38px 20px;
+    }
+}
+
+@media screen and (min-width: 660px) and (max-width: 990px) {
     .container-portfolio.home .d-flex{
         flex-wrap: wrap;
     }
@@ -805,7 +836,7 @@ nav.moviles{
         width: 95%;
         display: flex;
         justify-content: space-between;
-        
+        margin-top: 40px;
     }
     #contDes1,#contDes2,#contDes3{
         left: auto;
@@ -818,10 +849,25 @@ nav.moviles{
     /* -----------------------------  */
     #about #cont-about{
         flex-wrap: wrap;
-        flex-direction: column-reverse;
     }
     #about .card-about.cont-foto{
-        display: none;
+        width: 52%;
+        padding: 23px;
+    }
+    #about .card-about.cont-foto::before {
+        width: 90%;
+        height: 75%;
+        background: transparent;
+        border: 4px solid #fff;
+        position: absolute;
+        content: "";
+        border-radius: 20px;
+        left: 10px;
+        right: 0;
+        margin: 0 auto;
+        top: auto;
+        z-index: 2;
+        bottom: 3%;
     }
     #about .card-about:nth-child(2) {
         width: 95%;
@@ -911,9 +957,12 @@ nav.moviles{
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 650px) {
+@media screen and (min-width: 421px) and (max-width: 650px) {
     nav.desktop{
         display: none;
+    }
+    #portafolio .carousel-portfolio {
+        background-position-y: center;
     }
     nav.moviles{
         display: block;
@@ -958,21 +1007,26 @@ nav.moviles{
         margin: 0 0 0 5%;
     }
     .left {
-        width: 75%;
+        width: 100%;
+        text-align: center;
         padding: 144px 0 120px;
+        padding-right: 6%;
     }
     .center {
-        width: 25%;
-        overflow: hidden;
+        display: none;
     }
     .cont-foto img#foto-personal {
         position: absolute;
         z-index: 999;
         width: 200%;
-        top: 50px
+        top: 50px;
+        left: -25px;
     }
     .left h2{
-        font-size: 36px;
+        font-size: 42px;
+    }
+    .left h3{
+        font-size: 28px;
     }
     .cont-foto .formas{
         display: none;
@@ -999,10 +1053,25 @@ nav.moviles{
     /* -----------------------------  */
     #about #cont-about{
         flex-wrap: wrap;
-        flex-direction: column-reverse;
     }
     #about .card-about.cont-foto{
-        display: none;
+        width: 100%;
+        padding: 23px;
+    }
+    #about .card-about.cont-foto::before {
+        width: 90%;
+        height: 75%;
+        background: transparent;
+        border: 4px solid #fff;
+        position: absolute;
+        content: "";
+        border-radius: 20px;
+        left: 10px;
+        right: 0;
+        margin: 0 auto;
+        top: auto;
+        z-index: 2;
+        bottom: 3%;
     }
     #about .card-about:nth-child(2) {
         width: 95%;
@@ -1041,6 +1110,199 @@ nav.moviles{
         width: 80%;
         margin-top: 160px;
         margin-bottom: 40px;
+    }
+    #accordionExp .accordion-item button{
+        flex-wrap: wrap;
+    }
+    #accordionExp .accordion-item button span{
+        width: 100%;
+    }
+
+
+    #portafolio ul.categorias a{
+        font-size: 15px;
+        margin-right: 4px;
+        padding-right: 12px;
+    }
+    #portafolio ul.categorias{
+        padding-bottom: 40px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 420px) {
+    nav.desktop{
+        display: none;
+    }
+    nav.moviles{
+        display: block;
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        background: #f1f4f6;
+        box-shadow: 0px 4px 10px -5px #999;
+    }
+    .left h3{
+        font-size: 20px;
+    }
+    .container-portfolio{
+        padding-top: 60px;
+    }
+    .navbar-nav .nav-link.active::before{
+        left: 0;
+        margin: 2px 0;
+        width: 30%;
+    }
+    .navbar-nav .nav-link:hover::before {
+        width: 30%;
+        left: 0;
+        margin: 2px 0;
+    }
+    .navbar-nav .nav-link::before {
+        margin: 2px 0;
+        left: 0;
+    }
+    nav.moviles a.nav-link{
+        padding: 20px 10px;
+    font-size: 20px;
+    font-weight: 500;
+    }
+    .container-portfolio.home .d-flex{
+        flex-wrap: wrap;
+    }
+    .internas #navbarSupportedContent ul {
+        position: unset;
+        right: auto;
+        transition: 1s;
+    }
+    .container-portfolio {
+        width: 95%;
+        margin: 0 0 0 5%;
+    }
+    .left {
+        width: 100%;
+        text-align: center;
+        padding: 360px 0 60px;
+        padding-right: 6%;
+        position: relative;
+    }
+    .left::before{
+        width: 70%;
+        height: 350px;
+        content: "";
+        position: absolute;
+        top: 0;
+        background: url(../img/foto-restrepo.png);
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: top;
+        left: 13%;
+    }
+    .center {
+        display: none;
+    }
+    .cont-foto img#foto-personal {
+        position: absolute;
+        z-index: 999;
+        width: 200%;
+        top: 139px;
+        left: -23px;
+    }
+    .left h2{
+        font-size: 32px;
+    }
+    .cont-foto .formas{
+        display: none;
+    }
+    nav .btn-portfolio{
+        display: none;
+    }
+    .right{
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #contDes1,#contDes2,#contDes3{
+        left: auto;
+        margin: 20px 12px;
+    }
+    .redes{
+        top: 40px;
+        justify-content: center;
+        padding-bottom: 45px;
+    }
+
+    /* -----------------------------  */
+  
+    #about .card-about:nth-child(2) {
+        width: 95%;
+        padding: 0;
+        margin: 0;
+    }
+    #about h1,#servicios h1,#portafolio h1{
+        font-size: 35px;
+        margin-top: 34px;
+        text-align: center;
+    }
+    #portafolio h2{
+        text-align: center;
+    }
+    #portafolio .info-portfolio {
+        padding-top: 100px;
+        padding-left: 5%;
+    }
+    #about .card-about h3{
+        font-size: 25px;
+        margin-top: 40px;
+    }
+
+    #about #cont-about{
+        flex-wrap: wrap;
+    }
+    #about .card-about.cont-foto{
+        width: 100%;
+        padding: 23px;
+    }
+
+
+    #about .card-about.cont-foto::before {
+        width: 90%;
+        height: 75%;
+        background: transparent;
+        border: 4px solid #fff;
+        position: absolute;
+        content: "";
+        border-radius: 20px;
+        left: 10px;
+        right: 0;
+        margin: 0 auto;
+        /* top: 80px; */
+        z-index: 2;
+        bottom: 4%;
+    }
+
+    #menu-icon{
+        display: none;
+    }
+
+    /* ------------------------------ */
+
+    #servicios #cont-services {
+        margin-top: 50px;
+        flex-wrap: wrap;
+    }
+    #servicios .card-servicio{
+        width: 80%;
+        margin-top: 160px;
+        margin-bottom: 40px;
+        padding: 40px 10px;
+    }
+    #portafolio .info-categoria {
+        padding-right: 9px;
+    }
+    #portafolio .carousel-portfolio {
+        background-position-y: center;
     }
     #accordionExp .accordion-item button{
         flex-wrap: wrap;
