@@ -1211,9 +1211,15 @@ nav.moviles {
         padding-bottom: 40px;
         text-align: center;
     }
+    #portafolio .carousel-control-next {
+        left: 16%;
+    }
 }
 
 @media screen and (min-width: 320px) and (max-width: 420px) {
+    #portafolio .carousel-control-next {
+        left: 16%;
+    }
     nav.desktop {
         display: none;
     }
